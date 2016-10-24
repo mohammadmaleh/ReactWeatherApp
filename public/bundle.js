@@ -27209,7 +27209,7 @@
 	      null,
 	      React.createElement(
 	        'div',
-	        null,
+	        { className: 'text-center' },
 	        'Get Weather'
 	      ),
 	      React.createElement(WeatherForm, { onSearch: this.handelSearch }),
@@ -27290,7 +27290,7 @@
 	'use strict';
 
 	var axios = __webpack_require__(241);
-	var OPEN_WEATHER_MAP_URL = 'http://api.openweathermap.org/data/2.5/weather?appid=cadb7540ea107cb0f6159a51813f59be&units=metric';
+	var OPEN_WEATHER_MAP_URL = 'https://api.openweathermap.org/data/2.5/weather?appid=cadb7540ea107cb0f6159a51813f59be&units=metric';
 	module.exports = {
 	  getTemp: function getTemp(location) {
 	    var encodedLocation = encodeURIComponent(location);
@@ -28827,7 +28827,7 @@
 	    return React.createElement(
 	      'div',
 	      null,
-	      'Examples component'
+	      'Examples'
 	    );
 	  }
 	});
