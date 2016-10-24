@@ -27,7 +27,7 @@ let Weather =  React.createClass({
     let {temp,location} = this.state
     return(
       <div>
-        <div>Get Weather</div>
+        <div className="text-center">Get Weather</div>
         <WeatherForm onSearch={this.handelSearch}></WeatherForm>
         <WeatherMessage location={location} temp={temp}></WeatherMessage>
       </div>
